@@ -1,0 +1,42 @@
+WEB DESIGN PRINCIPLES ARE:
+Color Theory, User Interface Design, Typography and User 
+Experience design.
+
+
+Color Theory
+Moods:
+-> RED - love,intensity and energy
+-> YELLOW - joy,intellect and attention
+-> GREEN - freshness,safety and growth
+-> BLUE - stability,trust and serenity 
+-> PURPLE - royality, wealth and feminity
+
+(from color pallate,first try to have a pair of complementary colors.)
+
+
+
+Typography
+typing1: "serif"->feet(broad)-old(can be used for historical,serious
+and authoraitve and respectablewebsites and to dominate the old 
+time points.)
+
+typing2: "Sans-Serif"->feet broad with right angles(Sensible,simple
+and straightforward.)
+
+
+UI Design
+1. hirearchy(bigger items will draw the ATTENTION more!!)
+
+2. layout(mtlb sidhi sidhi website na bnakar ek bigger kbhi
+ smaller block ka manake website bnanai is much better.),try
+ to have 40-60 characters per line.
+
+3. Alignment(koshish kro ki ek vertical line me chize aligned hon.
+OR minimum number of lines should be there.)
+
+4. White Space(It's MUST)...
+i. simplicity
+ii. consistency
+iii. Reading Patterns(F shape or z-layout)
+
+5. All platform Design (RESPONSIVE)

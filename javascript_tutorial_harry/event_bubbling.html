@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbling</title>
+    <style>
+        .child{
+            background-color: green;
+            margin:14px;
+            padding:14px;
+            border: solid 2px black;
+            cursor: pointer;
+        }
+        .childcontainer{
+            background-color: yellow;
+            margin:14px;
+            padding:14px;
+            border: solid 2px black;
+        }
+        .container{
+            background-color: orangered;
+            margin:14px;
+            padding:14px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="childcontainer">
+            <div class ="child">
+                I am a Child.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let a= document.getElementsByClassName(".box")
+console.log(a, typeof a)
+let b= Array.from(a)
+b.forEach(element => {
+
+    let te =Math.random()
+    if(te>0.9){
+        element.style.backgroundColor = "red"
+    }
+    if(te>0.8&&te<0.9){
+        element.style.backgroundColor = "green"
+    }
+    if(te>0.6&&te<0.8){
+        element.style.backgroundColor = "yellow"
+    }
+    if(te>0.4&&te<0.6){
+        element.style.backgroundColor = "aqua"
+    }
+    if(te>0.2&&te<0.4){
+        element.style.backgroundColor = "gray"
+    }
+});
+        document.querySelector(".child").addEventListener("click",(e)=>{
+            alert("I am a child")
+            e.stopPropagation()
+        })
+        document.querySelector(".childcontainer").addEventListener("click",(e)=>{
+            alert("I am a child-container")
+            e.stopPropagation()
+        })
+        document.querySelector(".container").addEventListener("click",()=>{
+            alert("I am a container")
+        })
+        setInterval(() => {
+            document.querySelector(".child").style.background =b
+        }, 2000);
+        // same syntax for setTimeout
+    </script>
+</body>
+</html>

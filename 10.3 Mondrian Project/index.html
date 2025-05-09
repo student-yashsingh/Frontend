@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+    .red{
+      background-color: #E72F24 ;
+    }
+    .silver1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .silver2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .silver3{
+      background-color: #F0F1EC;
+      grid-row:span 2;
+    }
+    .silver4{
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 /4;
+    }
+    .silver5{
+      background-color: #F0F1EC;
+    }
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .black{
+      background-color: #232629;
+    }
+    .yellow{
+      background-color: #f9d01e;
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="grid red"></div>
+  <div class="grid silver1"></div>
+  <div class="grid silver2"></div>
+  <div class="grid silver3"></div>
+
+  <div class="grid blue"></div>
+  <div class="grid yellow"></div>
+  <div class="grid black"></div>
+  <div class="grid silver4"></div>
+  <div class="grid silver5"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.blue-box{
+    background-color: blue;
+    height: 300px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+/* a relative position moves the element, but still consumes some
+space in the original position. an absolute or fixed position moves
+the element, but does not consume any layout space. */
+
+.red-circle{
+    background-color:red;
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 250px;
+}
